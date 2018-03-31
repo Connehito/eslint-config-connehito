@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: ['flowtype', 'import', 'prettier', 'react'],
   extends: [
+    'eslint:recommended',
     'plugin:flowtype/recommended',
     'plugin:import/errors',
     'plugin:prettier/recommended',
