@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/connehito-eslint-config
+    working_directory: ~/eslint-config-connehito
     docker:
       - image: node:8.11
     steps:
@@ -12,5 +12,5 @@ jobs:
       - save_cache:
           key: dependencies-{{ checksum "yarn.lock" }}
           paths:
-            - ~/connehito-eslint-config/node_modules
+            - ~/eslint-config-connehito/node_modules
             - ~/.cache/yarn/
