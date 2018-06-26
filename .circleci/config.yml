@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/connehito-eslint-config
+    docker:
+      - image: node:8.11
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependencies-{{ checksum "yarn.lock" }}
+      - run: yarn install
+      - save_cache:
+          key: dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/connehito-eslint-config/node_modules
+            - ~/.cache/yarn/
