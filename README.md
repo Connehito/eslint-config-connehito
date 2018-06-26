@@ -1,5 +1,7 @@
 # eslint-config-connehito
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Connehito/eslint-config-connehito.svg)](https://greenkeeper.io/)
+
 ESLint shareable config for Connehito
 
 ## Installation
