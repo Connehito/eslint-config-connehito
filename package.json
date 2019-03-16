@@ -17,21 +17,22 @@
   "homepage": "https://github.com/connehito/eslint-config-connehito",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
+    "eslint": "^5.15.2",
     "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-flowtype": "^3.2.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.15.1"
+    "eslint-plugin-flowtype": "^3.4.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.4"
   },
   "peerDependencies": {
-    "babel-eslint": ">=8.2.0",
-    "eslint": ">=5.0.0",
-    "eslint-config-prettier": ">=3.0.0",
-    "eslint-plugin-flowtype": ">=2.50.0",
-    "eslint-plugin-import": ">=2.14.0",
-    "eslint-plugin-prettier": ">=2.6.0",
-    "eslint-plugin-react": ">=7.11.0"
+    "babel-eslint": ">=10.0.0",
+    "eslint": ">=5.15.0",
+    "eslint-config-prettier": ">=4.1.0",
+    "eslint-plugin-flowtype": ">=3.4.0",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-prettier": ">=3.0.0",
+    "eslint-plugin-react": ">=7.12.0",
+    "prettier": "1.16.0"
   }
 }
