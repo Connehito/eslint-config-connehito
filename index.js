@@ -1,26 +1,34 @@
 module.exports = {
-  parser: 'babel-eslint',
+  env: {
+    browser: true,
+    node: true
+  },
+  parser: '@typescript-eslint/parser',
   parserOptions: {
+    sourceType: 'module',
+    // Path of `tsconfig.json`.
+    // ex. `project: './tsconfig.json'`
+    project: './tsconfig.json',
+    ecmaVersion: 2018,
     ecmaFeatures: {
       jsx: true
     }
   },
-  env: {
-    browser: true,
-    es6: true,
-    node: true
-  },
-  plugins: ['flowtype', 'import', 'prettier', 'react'],
+  plugins: ['import', 'prettier', 'react'],
   extends: [
     'eslint:recommended',
-    'plugin:flowtype/recommended',
-    'plugin:import/errors',
+    'plugin:import/typescript',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
     'prettier',
-    'prettier/flowtype',
+    'prettier/@typescript-eslint',
     'prettier/react'
   ],
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   rules: {
     'prettier/prettier': [
       2,
@@ -30,5 +38,13 @@ module.exports = {
         singleQuote: true
       }
     ]
-  }
+  },
+  overrides: [
+    {
+      env: {
+        jest: true
+      },
+      files: ['*.test.ts', '*.test.tsx']
+    }
+  ]
 }
