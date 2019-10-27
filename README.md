@@ -36,7 +36,7 @@ $ yarn add --dev \
 
 ## Usage
 
-Add this to your `.eslintrc` file:
+Add this to your `.eslintrc.json` file:
 
 ```json
 {
