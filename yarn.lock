@@ -705,6 +705,11 @@ dotenv@^8.1.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
+ejs@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.7.1.tgz#5b5ab57f718b79d4aca9254457afecd36fa80228"
+  integrity sha512-kS/gEPzZs3Y1rRsbGX4UOSjtP/CeJP0CxSNZHYxGfVM/VgLcv0ZqM7C45YyTj2DI2g7+P9Dd24C+IMIg6D0nYQ==
+
 emoji-regex@^7.0.1:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
@@ -2333,20 +2338,20 @@ shelljs@0.8.3:
     interpret "^1.0.0"
     rechoir "^0.6.2"
 
-shipjs-lib@0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/shipjs-lib/-/shipjs-lib-0.7.1.tgz#fb239e596ec13289e39669f2dd0dc3c57f292873"
-  integrity sha512-T6NC0gz5jkcJB6obVRPukereDwJTypQE11k7ZNMymKc2u4KXdW6MgBAOZw9Xj6ibF3Yv54lb16qq2lfiZhnbxQ==
+shipjs-lib@0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/shipjs-lib/-/shipjs-lib-0.8.0.tgz#611f5db1ff8879a905b0eaee2c6fe79ede5fdc6f"
+  integrity sha512-yqfGP44ozfQm6tDfaGAlm8IdxwOyV66hQ9fxj+5ur25iSehwxDBYRGRitzRy8HKV0hzYxJnEw/ZYUor16ri/3A==
   dependencies:
     dotenv "^8.1.0"
     parse-github-url "1.0.2"
     semver "6.3.0"
     shelljs "0.8.3"
 
-shipjs@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/shipjs/-/shipjs-0.7.1.tgz#db1ae8871152d841435a6781df33977c7742cf6b"
-  integrity sha512-mhvPZZqKcVAeCM+FFGiPfovNOUM6GTVf23Z9eA1qfDXVsCk3YzOvv8PXRnyRYkuJo1xEEJYiViAwV9dtBDxSRw==
+shipjs@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/shipjs/-/shipjs-0.8.0.tgz#63ffed07caea888a1dd0bd70286f6a936736c006"
+  integrity sha512-mhkksBGqUvXURULPHCF5SFmSypFj9ytDWDWfU3+b6U8kdiAd2HLhk1oC5KfCEZ9gCmr4A6ayDu8HSmK7LHd1QQ==
   dependencies:
     "@babel/runtime" "^7.6.3"
     "@slack/webhook" "^5.0.1"
@@ -2354,11 +2359,14 @@ shipjs@^0.7.1:
     chalk "2.4.2"
     change-case "3.1.0"
     conventional-changelog-cli "2.0.25"
+    ejs "^2.7.1"
     esm "3.2.25"
     globby "^10.0.1"
     inquirer "7.0.0"
+    mkdirp "^0.5.1"
+    prettier "^1.18.2"
     shell-quote "^1.7.2"
-    shipjs-lib "0.7.1"
+    shipjs-lib "0.8.0"
     temp-write "4.0.0"
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
