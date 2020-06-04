@@ -1,5 +1,17 @@
 {
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "groupName": "all dependencies (non-major)",
+      "updateTypes": [
+        "patch",
+        "minor"
+      ]
+    }
+  ],
+  "schedule": [
+    "after 10am on Monday"
   ]
 }
