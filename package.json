@@ -20,17 +20,17 @@
   ],
   "main": "index.js",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.5.0",
-    "@typescript-eslint/parser": "2.5.0",
+    "@typescript-eslint/eslint-plugin": "2.34.0",
+    "@typescript-eslint/parser": "2.34.0",
     "eslint": "7.2.0",
-    "eslint-config-prettier": "6.4.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-prettier": "3.1.1",
-    "eslint-plugin-react": "7.16.0",
-    "prettier": "1.18.2",
-    "renovate": "20.25.5",
-    "shipjs": "0.7.1",
-    "typescript": "3.6.4"
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.0",
+    "prettier": "1.19.1",
+    "renovate": "20.25.8",
+    "shipjs": "0.20.0",
+    "typescript": "3.9.5"
   },
   "peerDependencies": {
     "eslint": "^6.5.1 || ^7.0.0",
