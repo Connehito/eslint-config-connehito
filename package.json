@@ -1,7 +1,7 @@
 {
   "name": "@connehito/eslint-config",
   "description": "Connehito ESLint config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "MIT",
   "author": "dachi023",
   "repository": {
@@ -16,7 +16,12 @@
     "config",
     "connehito",
     "eslint",
-    "javascript"
+    "javascript",
+    "jest",
+    "jsx",
+    "lint",
+    "react",
+    "typescript"
   ],
   "main": "index.js",
   "devDependencies": {
