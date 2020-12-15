@@ -4,20 +4,6 @@ ESLint shareable config for Connehito
 
 ## Installation
 
-v1 (For Flowtype project):
-```sh
-$ yarn add --dev \
-  babel-eslint \
-  eslint \
-  eslint-config-prettier \
-  eslint-plugin-flowtype \
-  eslint-plugin-import \
-  eslint-plugin-prettier \
-  eslint-plugin-react \
-  prettier \
-  @connehito/eslint-config@^1.4.1
-```
-
 v2 (For TypeScript project):
 
 ```sh
@@ -34,13 +20,28 @@ $ yarn add --dev \
   @connehito/eslint-config
 ```
 
+v1 (For Flowtype project):
+
+```sh
+$ yarn add --dev \
+  babel-eslint \
+  eslint \
+  eslint-config-prettier \
+  eslint-plugin-flowtype \
+  eslint-plugin-import \
+  eslint-plugin-prettier \
+  eslint-plugin-react \
+  prettier \
+  @connehito/eslint-config@^1.4.1
+```
+
 ## Usage
 
-Add this to your `.eslintrc.json` file:
+Add this to your `.eslintrc.js` file:
 
-```json
-{
-  "extends": "@connehito"
+```js
+module.exports = {
+  extends: ['@connehito']
 }
 ```
 
