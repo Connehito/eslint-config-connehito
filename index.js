@@ -13,13 +13,7 @@ module.exports = {
     },
     sourceType: 'module'
   },
-  plugins: [
-    '@typescript-eslint',
-    'import',
-    'jest',
-    'prettier',
-    'react'
-  ],
+  plugins: ['@typescript-eslint', 'import', 'jest', 'prettier', 'react'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -35,12 +29,7 @@ module.exports = {
     react: {
       version: 'detect'
     },
-    'import/extensions': [
-      '.js',
-      '.jsx',
-      '.ts',
-      '.tsx'
-    ]
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx']
   },
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -49,16 +38,22 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     'no-unused-vars': 'off',
     'sort-imports': 'off',
-    'import/order': ['error', {
-      alphabetize: {
-        order: 'asc'
+    'import/order': [
+      'error',
+      {
+        alphabetize: {
+          order: 'asc'
+        }
       }
-    }],
-    'prettier/prettier': ['error', {
-      printWidth: 120,
-      semi: false,
-      singleQuote: true
-    }]
+    ],
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 120,
+        semi: false,
+        singleQuote: true
+      }
+    ]
   },
   overrides: [
     {
@@ -72,10 +67,7 @@ module.exports = {
       env: {
         'jest/globals': true
       },
-      extends: [
-        'plugin:jest/recommended',
-        'plugin:jest/style'
-      ]
+      extends: ['plugin:jest/recommended', 'plugin:jest/style']
     }
   ]
 }
