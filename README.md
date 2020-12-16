@@ -11,6 +11,7 @@ $ yarn add --dev \
   eslint \
   eslint-config-prettier \
   eslint-plugin-import \
+  eslint-plugin-jest \
   eslint-plugin-prettier \
   eslint-plugin-react \
   prettier \
