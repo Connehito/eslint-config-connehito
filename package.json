@@ -27,16 +27,16 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
-    "eslint": "7.2.0",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-import": "2.21.2",
+    "eslint": "7.20.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jest": "24.1.3",
-    "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.22.0",
     "prettier": "1.19.1",
-    "renovate": "23.25.1",
-    "shipjs": "0.20.0",
-    "typescript": "3.9.5"
+    "renovate": "23.100.5",
+    "shipjs": "0.23.0",
+    "typescript": "3.9.9"
   },
   "peerDependencies": {
     "eslint": "^6.5.1 || ^7.0.0",
