@@ -1,5 +1,4 @@
-.circleci/
-
+.github/
 .editorconfig
 .eslintrc.js
 renovate.json
