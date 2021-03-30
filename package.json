@@ -4,48 +4,24 @@
   "version": "2.1.1",
   "license": "MIT",
   "author": "dachi023",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Connehito/eslint-config-connehito.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Connehito/eslint-config-connehito/issues"
-  },
+  "repository": "github:Connehito/eslint-config-connehito",
   "homepage": "https://github.com/connehito/eslint-config-connehito",
-  "keywords": [
-    "config",
-    "connehito",
-    "eslint",
-    "javascript",
-    "jest",
-    "jsx",
-    "lint",
-    "react",
-    "typescript"
-  ],
   "main": "index.js",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.34.0",
-    "@typescript-eslint/parser": "2.34.0",
-    "eslint": "7.2.0",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-import": "2.21.2",
-    "eslint-plugin-jest": "24.1.3",
-    "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-react": "7.20.0",
-    "prettier": "1.19.1",
-    "renovate": "23.25.1",
-    "shipjs": "0.20.0",
-    "typescript": "3.9.5"
-  },
-  "peerDependencies": {
-    "eslint": "^6.5.1 || ^7.0.0",
-    "prettier": "^1.18.2",
-    "typescript": "^3.6.4"
-  },
   "scripts": {
-    "release:prepare": "shipjs prepare",
-    "release:trigger": "shipjs trigger",
+    "test:eslint": "eslint *.js",
     "test:renovate": "renovate-config-validator"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.20.0",
+    "@typescript-eslint/parser": "4.20.0",
+    "eslint": "7.23.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.3.2",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.23.1",
+    "prettier": "2.2.1",
+    "renovate": "24.98.0",
+    "typescript": "4.2.3"
   }
 }
