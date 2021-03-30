@@ -12,8 +12,12 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
+          always-auth: true
           node-version: '14'
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@connehito'
       - run: yarn
+      - run: yarn run test:eslint
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
