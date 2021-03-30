@@ -3,15 +3,15 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    node: true
+    node: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: ['@typescript-eslint', 'import', 'jest', 'prettier', 'react'],
   extends: [
@@ -25,9 +25,9 @@ module.exports = {
   ],
   settings: {
     react: {
-      version: 'detect'
+      version: 'detect',
     },
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx']
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
   },
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -40,32 +40,32 @@ module.exports = {
       'error',
       {
         alphabetize: {
-          order: 'asc'
-        }
-      }
+          order: 'asc',
+        },
+      },
     ],
     'prettier/prettier': [
       'error',
       {
         printWidth: 120,
         semi: false,
-        singleQuote: true
-      }
-    ]
+        singleQuote: true,
+      },
+    ],
   },
   overrides: [
     {
       files: ['**/*.tsx'],
       rules: {
-        'react/prop-types': 'off'
-      }
+        'react/prop-types': 'off',
+      },
     },
     {
       files: ['**/__tests__/*'],
       env: {
-        'jest/globals': true
+        'jest/globals': true,
       },
-      extends: ['plugin:jest/recommended', 'plugin:jest/style']
-    }
-  ]
+      extends: ['plugin:jest/recommended', 'plugin:jest/style'],
+    },
+  ],
 }
